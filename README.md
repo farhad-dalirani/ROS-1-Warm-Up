@@ -1,5 +1,5 @@
 # About this repository:
-This repository contains code, instructions, commands, etc for Robotic Operating System for Warming-up (ROS 1).
+This repository contains code, instructions, commands, etc for Robotic Operating System (ROS 1) for the purpose of Warming-up.
 
 
 # Install ROS Noetic
