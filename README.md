@@ -69,6 +69,12 @@ Import ros package in Python:
 import rospy
 ```
 
+Import message in python:
+```
+import std_msgs
+from std_msgs import String
+```
+
 Initial a node:
 ```
 rospy.init_node('node name')
@@ -89,3 +95,20 @@ Check shoutdown flag has been sent or not:
 ```
 rospy.is_shutdown()
 ```
+
+Create publisher:
+```
+pub = rospy.Publisher(name='name', data_class=String (or other type), queue_size)
+```
+
+Publish message:
+```
+publisher_obj.publish(msg)
+```
+
+Create string message:
+```
+msg = String()
+msg.data = "Hi, this is me from the Robot news Radio!"
+```
+
