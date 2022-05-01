@@ -72,7 +72,7 @@ import rospy
 Import message in python:
 ```
 import std_msgs
-from std_msgs import String
+from std_msgs.msg import String
 ```
 
 Initial a node:
