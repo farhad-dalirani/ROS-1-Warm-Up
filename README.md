@@ -38,6 +38,10 @@ Install tutle package:
 ```
 sudo apt-get install ros-noetic-turtlesim
 ```
+Initiate master:
+```
+roscore
+```
 Run Turtle similator:
 ```
 rosrun turtlesim turtlesim_node
