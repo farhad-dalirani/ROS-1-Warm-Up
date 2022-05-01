@@ -60,8 +60,8 @@ rosrun turtlesim turtle_teleop_key
 `rosnode list`: It prints name of nodes that are being executed.<br />
 `rosnode ping /node-name`: It is useful to check ping and connectivity of a node and master.<br />
 `rosnode kill /node-name`: It terminates a node.<br />
-
-
+`rostopic list`: List all existing topics on graph.
+`rostopic echo /topic-name`: Listen to a topic in terminal. 
 
 ## ROS Python:
 Import ros package in Python:
@@ -98,7 +98,7 @@ rospy.is_shutdown()
 
 Create publisher:
 ```
-pub = rospy.Publisher(name='name', data_class=String (or other type), queue_size)
+pub = rospy.Publisher(name='/name', data_class=String (or other type), queue_size)
 ```
 
 Publish message:
@@ -111,4 +111,5 @@ Create string message:
 msg = String()
 msg.data = "Hi, this is me from the Robot news Radio!"
 ```
+
 
