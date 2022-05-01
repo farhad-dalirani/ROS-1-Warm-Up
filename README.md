@@ -63,4 +63,29 @@ rosrun turtlesim turtle_teleop_key
 
 
 
-## ROS python:
+## ROS Python:
+Import ros package in Python:
+```
+import rospy
+```
+
+Initial a node:
+```
+rospy.init_node('node name')
+```
+
+Log information:
+```
+rospy.loginfo('message')
+```
+
+Rate object for spleep, etc:
+```
+rate = rospy.Rate(10)
+rate.sleep()
+```
+
+Check shoutdown flag has been sent or not:
+```
+rospy.is_shutdown()
+```
