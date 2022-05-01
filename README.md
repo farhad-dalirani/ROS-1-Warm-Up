@@ -60,11 +60,11 @@ rosrun turtlesim turtle_teleop_key
 `rosnode list`: It prints name of nodes that are being executed.<br />
 `rosnode ping /node-name`: It is useful to check ping and connectivity of a node and master.<br />
 `rosnode kill /node-name`: It terminates a node.<br />
-`rostopic -h`: Shows all commands related to rostopic.
-`rostopic list`: List all existing topics on graph.
-`rostopic echo /topic-name`: Listen to a topic in terminal. 
-`rostopic info /topic-name`: Information related to a topic such as message type and punlisher node.
-`rostopic pub -r 5 topic-name std_msgs:String "data: 'Hello world!'"`
+`rostopic -h`: Shows all commands related to rostopic.<br />
+`rostopic list`: List all existing topics on graph.<br />
+`rostopic echo /topic-name`: Listen to a topic in terminal. <br />
+`rostopic info /topic-name`: Information related to a topic such as message type and punlisher node.<br />
+`rostopic pub -r 5 topic-name std_msgs:String "data: 'Hello world!'"`: Publish in a topic from terminal.<br />
 
 ## ROS Python:
 Import ros package in Python:
