@@ -33,6 +33,14 @@ sudo apt-get install ros-noetic-package-name
 
 For example, `sudo apt-get install ros-noetic-turtlesim`.
 
+## Check validity of installation of ROS and Catkin workstation:
+Install tutle package:
+```sudo apt-get install ros-noetic-turtlesim```
+Run Turtle similator:
+``` rosrun turtlesim turtlesim_node```
+Run key controls for the turtle:
+```rosrun turtlesim turtle_teleop_key```
+
 
 ## ROS command:
 `roscore`: It starts ROS master.<br />
