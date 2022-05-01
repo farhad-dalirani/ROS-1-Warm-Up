@@ -1,9 +1,10 @@
-# About this repository:
+# About this repository, ROS 1 Warm-up:
 This repository contains code, instructions, commands, etc for Robotic Operating System (ROS 1) for the purpose of Warming-up.
 
 
 # Install ROS Noetic
-install ROS Noetic as it is explained here: [Installation Guide](http://wiki.ros.org/noetic/Installation/Ubuntu)
+install ROS Noetic as it is explained here: [Installation Guide](http://wiki.ros.org/noetic/Installation/Ubuntu).<br />
+Other versions can be installed. The instaliation link can be find of official website of ROS.
 
 # Set-up Catkin work space:
 ```
