@@ -79,6 +79,10 @@ Initial a node:
 ```
 rospy.init_node('node name')
 ```
+Ititial a node with anonymous method to be able to run several instance simultanously:
+```
+rospy.init_node('node name', anonymous=True)
+```
 
 Log information:
 ```
