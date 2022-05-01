@@ -63,6 +63,8 @@ rosrun turtlesim turtle_teleop_key
 `rostopic -h`: Shows all commands related to rostopic.
 `rostopic list`: List all existing topics on graph.
 `rostopic echo /topic-name`: Listen to a topic in terminal. 
+`rostopic info /topic-name`: Information related to a topic such as message type and punlisher node.
+`rostopic pub -r 5 topic-name std_msgs:String "data: 'Hello world!'"`
 
 ## ROS Python:
 Import ros package in Python:
