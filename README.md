@@ -112,4 +112,12 @@ msg = String()
 msg.data = "Hi, this is me from the Robot news Radio!"
 ```
 
+Create a subscriber:
+```
+sub = rospy.Subscriber(name='/topic-name', data_class, callback)
+```
 
+Keep a node and all its threads untill shoutdown flag:
+```
+rospy.spin()
+```
