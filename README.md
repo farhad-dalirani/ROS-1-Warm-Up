@@ -25,7 +25,7 @@ First chage directory: `cd catkin_ws/src/`. Then, create package by using `catki
 For creating node by Python after making the new package, we can go to the directory of the new package inside catkin workstation and create a folder that is named `scripts`. We can put out python code inside this folder. We create a python file and make it executable by using `chmod +x file-name.py`. Making the catkin workspace after adding Python nodes is not necessary.
 
 
-## Install already ROS packages
+## Install already existing ROS packages
 We can use this command in terminal to install an existing ROS package:
 ```
 sudo apt-get install ros-noetic-package-name
