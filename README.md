@@ -68,6 +68,9 @@ rosrun turtlesim turtle_teleop_key
 `rosservice -h`: Shows all commands related to ros service.<br />
 `rosservice list`: List all existing topics on graph.<br />
 `rosservice call /sevice-name msg`: request from a service in terminal.
+`rosservice args /sevice-name`: print message's arguments of a service.
+`rosservice info /sevice-name`: print service information such as node name.
+
 
 ## ROS Python:
 Import ros package in Python:
@@ -150,6 +153,6 @@ client_obj = rospy.ServiceProxy('/service-name', message_type)
 
 Call the service:
 ```
-result = client_obj(msg)
+result = client_obj(message arguments)
 ```
 
