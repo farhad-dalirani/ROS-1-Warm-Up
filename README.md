@@ -93,6 +93,7 @@ rospy.init_node('node name', anonymous=True)
 Log information:
 ```
 rospy.loginfo('message')
+rospy.logwarn('message')
 ```
 
 Rate object for spleep, etc:
@@ -137,5 +138,18 @@ Create a service:
 rospy.Service('/server-name', message-to-server-type, request-handler-function)
 ```
 
+Wait for a service to be started:
+```
+rospy.wait_for_service('/service-name')
+```
 
+Create the client:
+```
+client_obj = rospy.ServiceProxy('/service-name', message_type)
+```
+
+Call the service:
+```
+result = client_obj(msg)
+```
 
