@@ -65,6 +65,9 @@ rosrun turtlesim turtle_teleop_key
 `rostopic echo /topic-name`: Listen to a topic in terminal. <br />
 `rostopic info /topic-name`: Information related to a topic such as message type and punlisher node.<br />
 `rostopic pub -r 5 topic-name std_msgs:String "data: 'Hello world!'"`: Publish in a topic from terminal.<br />
+`rosservice -h: Shows all commands related to ros service.<br />
+`rosservice list`: List all existing topics on graph.<br />
+
 
 ## ROS Python:
 Import ros package in Python:
@@ -128,3 +131,8 @@ Keep a node and all its threads untill shoutdown flag:
 ```
 rospy.spin()
 ```
+
+Create a service:
+`rospy.Service(/server-name, message-to-server-type, request-handler-function)`<br/>
+
+
