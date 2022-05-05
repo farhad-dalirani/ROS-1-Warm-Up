@@ -133,6 +133,8 @@ rospy.spin()
 ```
 
 Create a service:
-`rospy.Service(/server-name, message-to-server-type, request-handler-function)`<br/>
+```
+rospy.Service(/server-name, message-to-server-type, request-handler-function)
+```<br/>
 
 
