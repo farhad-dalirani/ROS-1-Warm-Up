@@ -65,7 +65,7 @@ rosrun turtlesim turtle_teleop_key
 `rostopic echo /topic-name`: Listen to a topic in terminal. <br />
 `rostopic info /topic-name`: Information related to a topic such as message type and punlisher node.<br />
 `rostopic pub -r 5 topic-name std_msgs:String "data: 'Hello world!'"`: Publish in a topic from terminal.<br />
-`rosservice -h: Shows all commands related to ros service.<br />
+`rosservice -h`: Shows all commands related to ros service.<br />
 `rosservice list`: List all existing topics on graph.<br />
 
 
