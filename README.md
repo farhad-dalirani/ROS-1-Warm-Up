@@ -33,6 +33,9 @@ sudo apt-get install ros-noetic-package-name
 
 For example, `sudo apt-get install ros-noetic-turtlesim`.
 
+## Add dependencies to an already existing package:
+Go to package directory in catkin work space, then, modify CMakelist.txt and package.xml. 
+
 ## Check validity of installation of ROS and Catkin workstation:
 Install tutle package:
 ```
