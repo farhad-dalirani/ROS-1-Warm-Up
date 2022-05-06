@@ -70,9 +70,9 @@ rosrun turtlesim turtle_teleop_key
 `rostopic pub -r 5 topic-name std_msgs:String "data: 'Hello world!'"`: Publish in a topic from terminal.<br />
 `rosservice -h`: Shows all commands related to ros service.<br />
 `rosservice list`: List all existing topics on graph.<br />
-`rosservice call /sevice-name msg`: request from a service in terminal.
-`rosservice args /sevice-name`: print message's arguments of a service.
-`rosservice info /sevice-name`: print service information such as node name.
+`rosservice call /sevice-name msg`: request from a service in terminal.<br />
+`rosservice args /sevice-name`: print message's arguments of a service.<br />
+`rosservice info /sevice-name`: print service information such as node name.<br />
 
 
 ## ROS Python:
