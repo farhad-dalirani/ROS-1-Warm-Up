@@ -162,3 +162,10 @@ Call the service:
 result = client_obj(message arguments)
 ```
 
+# Useful existing messages packages:
+```
+std_msgs
+sensor_msgs
+geometry_msgs
+std_srvs
+```
