@@ -1,4 +1,4 @@
-## About this repository, ROS 1 Warm-up:
+## About this repository, ROS 1 Warm-up tutorial:
 This repository contains code, instructions, commands, etc for Robotic Operating System (ROS 1) for the purpose of education and Warming-up.
 
 
@@ -25,7 +25,7 @@ First chage directory: `cd catkin_ws/src/`. Then, create package by using `catki
 For creating node by Python after making the new package, we can go to the directory of the new package inside catkin workstation and create a folder that is named `scripts`. We can put out python code inside this folder. We create a python file and make it executable by using `chmod +x file-name.py`. Making the catkin workspace after adding Python nodes is not necessary.
 
 
-## Install already existing ROS packages
+## Install existing ROS packages
 We can use this command in terminal to install an existing ROS package:
 ```
 sudo apt-get install ros-noetic-package-name
@@ -34,7 +34,7 @@ sudo apt-get install ros-noetic-package-name
 For example, `sudo apt-get install ros-noetic-turtlesim`.
 
 ## Add dependencies to an already existing package:
-Go to package directory in catkin work space, then, modify `CMakelist.txt` and `package.xml`. 
+Go to package directory in catkin work space, then, modify `CMakelist.txt` and `package.xml`.
 
 ## Check validity of installation of ROS and Catkin workstation:
 Install tutle package:
@@ -69,10 +69,10 @@ rosrun turtlesim turtle_teleop_key
 `rostopic info /topic-name`: Information related to a topic such as message type and punlisher node.<br />
 `rostopic pub -r 5 topic-name std_msgs:String "data: 'Hello world!'"`: Publish in a topic from terminal.<br />
 `rosservice -h`: Shows all commands related to ros service.<br />
+`rosservice info /sevice-name`: print service information such as node name.<br />
 `rosservice list`: List all existing topics on graph.<br />
 `rosservice call /sevice-name msg`: request from a service in terminal.<br />
 `rosservice args /sevice-name`: print message's arguments of a service.<br />
-`rosservice info /sevice-name`: print service information such as node name.<br />
 
 
 ## ROS Python:
