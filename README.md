@@ -1,3 +1,6 @@
+![ROS CODE CHEAT SHEET](ROS.png?raw=true)
+
+
 ## About this repository, ROS 1 Warm-up tutorial:
 This repository contains code, instructions, commands, etc for Robotic Operating System (ROS 1) for the purpose of education and Warming-up.
 
