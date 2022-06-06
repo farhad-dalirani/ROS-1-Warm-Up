@@ -315,4 +315,16 @@ find_package(catkin REQUIRED COMPONENTS
  ```
 
 # Create a new service type:
-
+It is similar to `Create a new message type` section. First, we go to the package that dedicated to the new message and service type, in our example it is `my_robot_message` package. Then, we create a folder with the name of `srv`. After that we create the new sevice file:
+```
+mkdir srv
+cd srv
+touch ComputeDiskArea.srv
+```
+For example, we create this service type:
+```
+float64 radius
+---
+float64 area
+```
+The 3 dashes are necessary. It separates service request and service response.
