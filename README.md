@@ -162,7 +162,7 @@ Call the service:
 result = client_obj(message arguments)
 ```
 
-# Useful existing messages packages:
+# Useful existing message and sevice packages:
 ```
 std_msgs
 sensor_msgs
@@ -257,4 +257,34 @@ as below:
 )
 
 ```
-Finally, we should back to `catkin_ws` folder and make the new package by `catkin_make`. Now the new package that contain the new message type can be added as a dependency into a package. Therefore, we will be able to use the new message type.
+Finally, we should back to `catkin_ws` folder and make the new package by `catkin_make`. Now the new package that contain the new message type can be added as a dependency into a package. Therefore, we will be able to use the new message type.<br />
+To add message package to another package, we should first go to the target package folder. For example, we go to `my_ros_toturail`:
+```
+cd src/my_robot_rurorials/
+```
+After that first, we should edit `package.xml` by adding this line:
+```
+<depend>my_robot_msgs</depend>
+```
+Second, we should edit `CMakeList.txt` by changing:
+```
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  std_srvs
+)
+```
+As below:
+```
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  std_srvs
+  my_robot_msgs
+)
+```
+
+
+
