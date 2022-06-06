@@ -186,6 +186,11 @@ Call the service:
 result = client_obj(message arguments)
 ```
 
+Get a ros parameter in Python code:
+```
+publish_frequency = rospy.get_param('/number_publish_frequency')
+```
+
 # Useful existing message and sevice packages:
 ```
 std_msgs
