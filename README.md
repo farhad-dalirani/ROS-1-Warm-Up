@@ -278,7 +278,7 @@ add_message_files(
 
 ```
 Finally, we should back to `catkin_ws` folder and make the new package by `catkin_make`. Now the new package that contain the new message type can be added as a dependency into a package. Therefore, we will be able to use the new message type.<br />
-To add message package to another package, we should first go to the target package folder. For example, we go to `my_ros_toturail`:
+To add message package to another package, we should first go to the target package folder. For example, we go to `my_ros_turorials`:
 ```
 cd src/my_robot_rurorials/
 ```
