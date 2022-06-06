@@ -328,3 +328,5 @@ float64 radius
 float64 area
 ```
 The 3 dashes are necessary. It separates service request and service response.
+
+Using the new service type in another package is like using a new message type in `Create a new message type` section.
