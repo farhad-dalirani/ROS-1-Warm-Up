@@ -219,12 +219,42 @@ catkin_package(
 #  DEPENDS system_lib
 )
 ```
-After editing `CMakeLists` we create a folder besides `CMakeLists` and `package.xml`:
+After editing `CMakeLists.txt` we create a folder besides `CMakeLists` and `package.xml`:
 ```
 mkdir msg
 cd msg
 ```
-Then we can create message code file. For example:
+It must be msg. Then we can create message code file. For example:
 ```
 touch HardwareStatus.msg
 ```
+This is an example of a new message type which we put in `HardwareStatus.msg`:
+```
+int64 temperature
+bool are_motors_up
+string debug_message
+```
+All of them are standard msg types that are provided by ROS.
+
+Again, we should edit `CMakeLists.txt` again by editing following section:
+```
+## Generate messages in the 'msg' folder
+# add_message_files(
+#   FILES
+#   Message1.msg
+#   Message2.msg
+# )
+
+```
+as below:
+```
+## Generate messages in the 'msg' folder
+# add_message_files(
+  #   FILES
+  #   Message1.msg
+  #   Message2.msg
+  HardwareStatus.msg
+)
+
+```
+Finally, we should back to `catkin_ws` folder and make the new package by `catkin_make`. Now the new package that contain the new message type can be added as a dependency into a package. Therefore, we will be able to use the new message type.
