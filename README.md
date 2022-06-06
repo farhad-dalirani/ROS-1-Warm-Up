@@ -193,7 +193,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
 )
 ```
-Second, we should encomment this commented section:
+Second, we should uncomment this commented section:
 ```
 ## Generate added messages and services with any dependencies listed here
 # generate_messages(
@@ -201,7 +201,7 @@ Second, we should encomment this commented section:
 #   std_msgs
 # )
 ```
-Third, we encomment and add the below section:
+Third, we uncomment and add the below section:
 ```
 catkin_package(
 #  INCLUDE_DIRS include
@@ -219,5 +219,12 @@ catkin_package(
 #  DEPENDS system_lib
 )
 ```
-
-
+After editing `CMakeLists` we create a folder besides `CMakeLists` and `package.xml`:
+```
+mkdir msg
+cd msg
+```
+Then we can create message code file. For example:
+```
+touch HardwareStatus.msg
+```
