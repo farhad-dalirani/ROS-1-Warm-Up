@@ -257,7 +257,7 @@ Again, we should edit `CMakeLists.txt` again by editing following section:
 as below:
 ```
 ## Generate messages in the 'msg' folder
-# add_message_files(
+add_message_files(
   FILES
   HardwareStatus.msg
 )
@@ -291,11 +291,13 @@ find_package(catkin REQUIRED COMPONENTS
   my_robot_msgs
 )
 ```
- After these step a new terminal should be opend and in catkin workspace these commands should be entered:
+ After these step terminals should be reopend and in case of problem, in catkin workspace these commands should be entered:
  ```
- catkin_make
- source catkin_ws/devel/setup.bash
  source ~/.bashrc
+ ```
+ yet if it did not work:
+ ```
+ source catkin_ws/devel/setup.bash
  ```
 
 
