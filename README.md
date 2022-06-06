@@ -1,15 +1,29 @@
 ![ROS CODE CHEAT SHEET](ROS.png?raw=true)
 
+# Table of contents
 
-## About this repository, ROS 1 Warm-up tutorial:
+- [About this repository, ROS 1 Warm-up tutorial:](#about-this-repository-ros-1-warm-up-tutorial)
+- [Install ROS Noetic](#install-ros-noetic)
+- [Set-up Catkin work space:](#set-up-catkin-work-space)
+- [Create a package:<br />](#create-a-packagebr-)
+- [Install existing ROS packages](#install-existing-ros-packages)
+- [Add dependencies to an already existing package:](#add-dependencies-to-an-already-existing-package)
+- [Check validity of installation of ROS and Catkin workstation:](#check-validity-of-installation-of-ros-and-catkin-workstation)
+- [ROS command:](#ros-command)
+- [ROS Python:](#ros-python)
+- [Useful existing message and sevice packages:](#useful-existing-message-and-sevice-packages)
+- [Create a new message type:](#create-a-new-message-type)
+- [Create a new service type:](#create-a-new-service-type)
+
+# About this repository, ROS 1 Warm-up tutorial:
 This repository contains code, instructions, commands, etc for Robotic Operating System (ROS 1) for the purpose of education and Warming-up.
 
 
-## Install ROS Noetic
+# Install ROS Noetic
 install ROS Noetic as it is explained here: [Installation Guide](http://wiki.ros.org/noetic/Installation/Ubuntu).<br />
 Other versions can be installed. The instaliation link can be find of official website of ROS.
 
-## Set-up Catkin work space:
+# Set-up Catkin work space:
 ```
 mkdir catkin_ws
 cd catkin_ws/
@@ -22,13 +36,13 @@ source setup.bash
 Add this to the end of .bashrc file:<br />
 `source ~/catkin_ws/devel/setup.bash`<br />
 
-## Create a package:<br />
+# Create a package:<br />
 First chage directory: `cd catkin_ws/src/`. Then, create package by using `catkin_create_pkg package-name dependencies name`. For example, `catkin_create_pkg my_first_package roscpp rospy std_msgs`. After that, we should go to `catkin_ws` and make again by using `catkin_make`.<br />
 
 For creating node by Python after making the new package, we can go to the directory of the new package inside catkin workstation and create a folder that is named `scripts`. We can put out python code inside this folder. We create a python file and make it executable by using `chmod +x file-name.py`. Making the catkin workspace after adding Python nodes is not necessary.
 
 
-## Install existing ROS packages
+# Install existing ROS packages
 We can use this command in terminal to install an existing ROS package:
 ```
 sudo apt-get install ros-noetic-package-name
@@ -36,10 +50,10 @@ sudo apt-get install ros-noetic-package-name
 
 For example, `sudo apt-get install ros-noetic-turtlesim`.
 
-## Add dependencies to an already existing package:
+# Add dependencies to an already existing package:
 Go to package directory in catkin work space, then, modify `CMakelist.txt` and `package.xml`.
 
-## Check validity of installation of ROS and Catkin workstation:
+# Check validity of installation of ROS and Catkin workstation:
 Install tutle package:
 ```
 sudo apt-get install ros-noetic-turtlesim
@@ -58,7 +72,7 @@ rosrun turtlesim turtle_teleop_key
 ```
 
 
-## ROS command:
+# ROS command:
 `roscore`: It starts ROS master.<br />
 `rosrun package-name node-name`: It executes a node inside a package.<br />
 `rosrun rqt_graph rqt_graph`: It plots nodes in ROS's graph. Turn-off debuh checkbox for showing all details.<br />
@@ -78,7 +92,7 @@ rosrun turtlesim turtle_teleop_key
 `rosservice args /sevice-name`: print message's arguments of a service.<br />
 `rosmsg list | grep message_package_name`: See our created message data type. It should be enter in catkin workstation<br /> 
 
-## ROS Python:
+# ROS Python:
 Import ros package in Python:
 ```
 import rospy
@@ -300,4 +314,5 @@ find_package(catkin REQUIRED COMPONENTS
  source catkin_ws/devel/setup.bash
  ```
 
+# Create a new service type:
 
