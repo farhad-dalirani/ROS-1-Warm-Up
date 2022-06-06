@@ -179,13 +179,45 @@ cd my_robot_msgs
 rm -rf include/
 rm -rf src/
 ```
-Then we should edit 'package.xml' by adding these two lines:
+Then we should edit `package.xml` by adding these two lines:
 ```
 <build_depend>message_generation</build_depend>
 <exec_depend>message_runtime</exec_depend>
 ```
-Then we should edit 'CMakeLists.txt file':
-
-
+Then we should edit `CMakeLists.txt file`. First, we add `message_generation` to `find_package` section. For example:
+```
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+  message_generation
+)
+```
+Second, we should encomment this commented section:
+```
+## Generate added messages and services with any dependencies listed here
+# generate_messages(
+#   DEPENDENCIES
+#   std_msgs
+# )
+```
+Third, we encomment and add the below section:
+```
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES my_robot_msgs
+#  CATKIN_DEPENDS roscpp rospy std_msgs
+#  DEPENDS system_lib
+)
+```
+as following:
+```
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES my_robot_msgs
+   CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
+#  DEPENDS system_lib
+)
+```
 
 
