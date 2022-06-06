@@ -76,7 +76,7 @@ rosrun turtlesim turtle_teleop_key
 `rosservice list`: List all existing topics on graph.<br />
 `rosservice call /sevice-name msg`: request from a service in terminal.<br />
 `rosservice args /sevice-name`: print message's arguments of a service.<br />
-
+`rosmsg list | grep message_package_name`: See our created message data type. It should be enter in catkin workstation<br /> 
 
 ## ROS Python:
 Import ros package in Python:
@@ -285,6 +285,10 @@ find_package(catkin REQUIRED COMPONENTS
   my_robot_msgs
 )
 ```
-
+ After these step a new terminal should be opend and in catkin workspace these commands should be entered:
+ ```
+ source ~/.bashrc
+ catkin_make
+ ```
 
 
