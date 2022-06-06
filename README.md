@@ -287,6 +287,7 @@ find_package(catkin REQUIRED COMPONENTS
 ```
  After these step a new terminal should be opend and in catkin workspace these commands should be entered:
  ```
+ source catkin_ws/devel/setup.bash
  source ~/.bashrc
  catkin_make
  ```
