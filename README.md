@@ -89,13 +89,15 @@ rosrun turtlesim turtle_teleop_key
 `rosservice info /sevice-name`: print service information such as node name.<br />
 `rosservice list`: List all existing topics on graph.<br />
 `rosservice call /sevice-name msg`: request from a service in terminal.<br />
-`rosservice args /sevice-name`: print message's arguments of a service.<br />
-`rosmsg list | grep message_package_name`: See our created message data type. It should be enter in catkin workstation<br /> 
+`rosservice args /sevice-name`: print message's arguments of a service.<br /> 
 `rosmsg -h`: Shows description for different command for message files.<br />
 `rossrv -h`: Shows description for different command for message files.<br />
 `rosmsg show message_file_name`: Shows fields of a message type.<br />
 `rossrv show service_file_name`: Shows fields of a service type.<br />
-
+`rosmsg list | grep message_package_name`: See our created message data type. It should be enter in catkin workstation<br />
+`rosparam -h`: Show commands related to ROS parameter. <br />
+`rosparam list`: List of all existing parameters.
+`rosparam set /programmer "Farhad"`: Set a new parameters. <br />
 
 # ROS Python:
 Import ros package in Python:
