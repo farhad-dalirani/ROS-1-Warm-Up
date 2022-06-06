@@ -201,6 +201,14 @@ Second, we should uncomment this commented section:
 #   std_msgs
 # )
 ```
+as below:
+```
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+```
+
 Third, we uncomment and add the below section:
 ```
 catkin_package(
@@ -250,9 +258,7 @@ as below:
 ```
 ## Generate messages in the 'msg' folder
 # add_message_files(
-  #   FILES
-  #   Message1.msg
-  #   Message2.msg
+  FILES
   HardwareStatus.msg
 )
 
