@@ -97,7 +97,10 @@ rosrun turtlesim turtle_teleop_key
 `rosmsg list | grep message_package_name`: See our created message data type. It should be enter in catkin workstation<br />
 `rosparam -h`: Show commands related to ROS parameter. <br />
 `rosparam list`: List of all existing parameters.
-`rosparam set /programmer "Farhad"`: Set a new parameters. <br />
+`rosparam set /programmer "Farhad"`: Set a new paramerosparam get /sensor_read_frequency 
+ters. <br />
+`rosparam get /sensor_read_frequency `: Get value of a parameter. <br />
+
 
 # ROS Python:
 Import ros package in Python:
