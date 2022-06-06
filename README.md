@@ -169,3 +169,23 @@ sensor_msgs
 geometry_msgs
 std_srvs
 ```
+
+# Create a new message type:
+For avoiding dependency issues and usability, it is good idea to create a new messsage type inside a dedicated message package. For example:
+```
+cd catkin_ws/src
+catkin_create_pkg my_robot_msgs roscpp rospy std_msgs
+cd my_robot_msgs
+rm -rf include/
+rm -rf src/
+```
+Then we should edit 'package.xml' by adding these two lines:
+```
+<build_depend>message_generation</build_depend>
+<exec_depend>message_runtime</exec_depend>
+```
+Then we should edit 'CMakeLists.txt file':
+
+
+
+
