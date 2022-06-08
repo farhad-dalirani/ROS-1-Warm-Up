@@ -100,7 +100,8 @@ rosrun turtlesim turtle_teleop_key
 `rosparam set /programmer "Farhad"`: Set a new paramerosparam get /sensor_read_frequency 
 ters. <br />
 `rosparam get /sensor_read_frequency `: Get value of a parameter. <br />
-
+`rosbag -h`: It shows commands related to ROS bag.
+`rosbag record /name-of-topic`: Record a topic. It creates `.bag` file.
 
 # ROS Python:
 Import ros package in Python:
