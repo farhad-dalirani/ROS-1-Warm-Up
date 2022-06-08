@@ -345,3 +345,42 @@ float64 area
 The 3 dashes are necessary. It separates service request and service response.
 
 Using the new service type in another package is like using a new message type in `Create a new message type` section.
+
+# Create Launch file:
+It is better to put launch files in a separate ROS package; however, they can be put in any package. First, we go to Catkin workstation, `src` folder. After that we create a new package:
+
+```
+cd catkin_ws/src/
+catkin_create_pkg my_robot_bringup
+```
+Then, we should back to catkin workstation and make the catkin workstation:
+```
+catkin_make
+```
+After that, we go to package folder and create a folder with the name of `launch`:
+```
+cd src/my_robot_bringup/
+mkdir launch
+```
+Then inside the launch folder, we create our launch file with the extension of `.launch`:
+```
+touch number_app.launch
+```
+Now, inside the launch file, we can determine parameters and nodes that are needed to created after calling the launch file:
+```
+<launch>
+
+    <param name="/number_publish_frequency" type="double" value="3.0" />
+    <param name="/number_to_publish" type="int" value="10" />
+
+    <node name="number_generator" pkg="my_robot_rurorials" type="number_generator.py" />
+
+</launch>
+```
+`node name=""` overwrites the node name that specified in the node file. We can select identical node name or a different name. 
+
+In this way we can call a ros launch file, it it does not work, we should go to the directory of launch file:
+```
+roslaunch my_robot_bringup number_app.launch
+```
+this command checks for `roscore`, if it is not running, it execute `roscore` before launching.
