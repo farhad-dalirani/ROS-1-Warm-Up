@@ -14,6 +14,7 @@
 - [Useful existing message and sevice packages:](#useful-existing-message-and-sevice-packages)
 - [Create a new message type:](#create-a-new-message-type)
 - [Create a new service type:](#create-a-new-service-type)
+- [Create Launch file:](#create-launch-file)
 
 # About this repository, ROS 1 Warm-up tutorial:
 This repository contains code, instructions, commands, etc for Robotic Operating System (ROS 1) for the purpose of education and Warming-up.
