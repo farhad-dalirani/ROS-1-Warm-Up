@@ -103,6 +103,8 @@ ters. <br />
 `rosparam get /sensor_read_frequency `: Get value of a parameter. <br />
 `rosbag -h`: It shows commands related to ROS bag.
 `rosbag record /name-of-topic`: Record a topic. It creates `.bag` file.
+`rosbag info name-of-bag-file.bag`: It shows information related to a bag file such as path, duration, start and end time, number of messages, message type, topic name, etc.
+`rosbag play name-of-bag-file.bag`: It plays messages inside the `.bag` file as it was generated. We can create a subscriber to the topic and use the recorded messages.
 
 # ROS Python:
 Import ros package in Python:
