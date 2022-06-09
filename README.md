@@ -22,8 +22,8 @@ This repository contains code, instructions, commands, etc for Robotic Operating
 
 # Resources:
 - ROS Wiki
-- ROS answers
-- ROS discourse
+- ROS Answers
+- ROS Discourse
 
 # Install ROS Noetic
 install ROS Noetic as it is explained here: [Installation Guide](http://wiki.ros.org/noetic/Installation/Ubuntu).<br />
