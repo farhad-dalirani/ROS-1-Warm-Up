@@ -39,7 +39,7 @@ Add this to the end of .bashrc file:
 source ~/catkin_ws/devel/setup.bash
 ```
 
-We can create as many catkin workstation as we want by following the above method. However, we should go to .bashrc file and comment all of them except the one that we want to use.
+We can create as many catkin workstations as we want by following the above method. However, we should go to .bashrc file and comment all of them except the one that we want to use.
 
 # Create a package:<br />
 First chage directory: `cd catkin_ws/src/`. Then, create package by using `catkin_create_pkg package-name dependencies name`. For example, `catkin_create_pkg my_first_package roscpp rospy std_msgs`. After that, we should go to `catkin_ws` and make again by using `catkin_make`.<br />
