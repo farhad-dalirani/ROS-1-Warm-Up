@@ -3,6 +3,7 @@
 # Table of contents
 
 - [About this repository, ROS 1 Warm-up tutorial:](#about-this-repository-ros-1-warm-up-tutorial)
+- [Resources:](#resources)
 - [Install ROS Noetic](#install-ros-noetic)
 - [Set-up Catkin work space:](#set-up-catkin-work-space)
 - [Create a package:<br />](#create-a-packagebr-)
@@ -19,6 +20,10 @@
 # About this repository, ROS 1 Warm-up tutorial:
 This repository contains code, instructions, commands, etc for Robotic Operating System (ROS 1) for the purpose of education and Warming-up.
 
+# Resources:
+- ROS Wiki
+- ROS answers
+- ROS discourse
 
 # Install ROS Noetic
 install ROS Noetic as it is explained here: [Installation Guide](http://wiki.ros.org/noetic/Installation/Ubuntu).<br />
