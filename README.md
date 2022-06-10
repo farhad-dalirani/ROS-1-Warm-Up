@@ -398,8 +398,13 @@ roslaunch my_robot_bringup number_app.launch
 ```
 this command checks for `roscore`, if it is not running, it execute `roscore` before launching.
 
+<br />
+<br />
+
+---
+
 # Famous ROS packages:
-This part has instruction for some of the most famoust ROS packages that I use for my PhD thesis.
+This part has instructions for some of the most famous ROS packages that I use for my PhD thesis.
 
 ## ROS Wrapper for Intel RealSense Devices:
 It can be installed according to this tutorial:
