@@ -397,3 +397,20 @@ In this way we can call a ros launch file, it it does not work, we should go to 
 roslaunch my_robot_bringup number_app.launch
 ```
 this command checks for `roscore`, if it is not running, it execute `roscore` before launching.
+
+# Famous ROS packages:
+This part has instruction for some of the most famoust ROS packages that I use for my PhD thesis.
+
+## ROS Wrapper for Intel RealSense Devices:
+It can be installed according to this tutorial:
+```
+https://github.com/IntelRealSense/realsense-ros
+```
+
+## ROS RVIZ:
+The ROS package is used to visualised different kind of information such as images, point clouds, etc.
+```
+http://wiki.ros.org/rviz/UserGuide
+```
+
+
