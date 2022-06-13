@@ -379,6 +379,7 @@ Then inside the launch folder, we create our launch file with the extension of `
 ```
 touch number_app.launch
 ```
+Is `chmod +x file-name` required?
 Now, inside the launch file, we can determine parameters and nodes that are needed to created after calling the launch file:
 ```
 <launch>
