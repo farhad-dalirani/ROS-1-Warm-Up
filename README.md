@@ -406,10 +406,15 @@ this command checks for `roscore`, if it is not running, it execute `roscore` be
 # Famous ROS packages:
 This part has instructions for some of the most famous ROS packages that I use for my PhD thesis.
 
-## ROS Wrapper for Intel RealSense Devices:
+## ROS Wrapper for Intel RealSense Device:
 It can be installed according to this tutorial:
 ```
 https://github.com/IntelRealSense/realsense-ros
+```
+
+The default execution of the Intel RealSense Device is as follow:
+```
+roslaunch realsense2_camera rs_camera.launch
 ```
 
 ## ROS RVIZ:
@@ -417,5 +422,13 @@ The ROS package is used to visualised different kind of information such as imag
 ```
 http://wiki.ros.org/rviz/UserGuide
 ```
+One one the ways to execute RVIZ is:
+```
+rosrun rviz rviz
+```
 
+At the `Displays` section of RVIZ's GUI, there is an `Add` button. After clicking on it, we can visualize a topic with two ways:
+1- By display type tab in the opened window
+2- By topic type tab in the opened window
+The second one is easier.
 
