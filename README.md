@@ -438,4 +438,11 @@ It can be isntalled according to:
 ```
 https://github.com/basler/pylon-ros-camera
 ```
-
+The simplest way to start the camera:
+```
+https://github.com/basler/pylon-ros-camera
+```
+It is black and white, It can be convert to color by services like:
+```
+rosservice call /pylon_camera_node/set_image_encoding "value: rgb8"
+```
