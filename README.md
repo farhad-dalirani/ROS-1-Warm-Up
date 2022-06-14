@@ -437,6 +437,7 @@ The second one is easier.
 It can be isntalled according to:
 ```
 https://github.com/basler/pylon-ros-camera
+wiki.ros.org/action/fullsearch/pylon_camera
 ```
 The simplest way to start the camera:
 ```
