@@ -447,3 +447,7 @@ It is black and white, It can be convert to color by services like:
 ```
 rosservice call /pylon_camera_node/set_image_encoding "value: rgb8"
 ```
+The images can be visualized by `RVIZ` or:
+```
+rosrun image_view image_view image:=/pylon/camera_node/image_raw
+```
