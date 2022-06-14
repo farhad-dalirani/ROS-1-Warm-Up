@@ -433,3 +433,9 @@ At the `Displays` section of RVIZ's GUI, there is an `Add` button. After clickin
 2- By topic type tab in the opened window
 The second one is easier.
 
+## ROS Basler Pylon ROS Camera
+It can be isntalled according to:
+```
+https://github.com/basler/pylon-ros-camera
+```
+
