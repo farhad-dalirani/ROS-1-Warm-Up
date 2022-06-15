@@ -462,3 +462,8 @@ roscore
 rosrun pylon_camera set_device_usr_id your_device_user_id
 ```
 To see changes, usb cable of the camera should be removed and pluged in.
+
+How to set up to basler camera:
+```
+https://github.com/basler/pylon-ros-camera/issues/60#issuecomment-740621677
+```
