@@ -451,3 +451,7 @@ The images can be visualized by `RVIZ` or:
 ```
 rosrun image_view image_view image:=/pylon/camera_node/image_raw
 ```
+For assign device user id to Basler cameras, each time we connect on of cameras and call this command:
+```
+rosrun pylon_camera set_device_usr_id [-sn SERIAL_NB] your_device_user_id
+```
