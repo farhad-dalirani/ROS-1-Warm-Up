@@ -453,5 +453,12 @@ rosrun image_view image_view image:=/pylon/camera_node/image_raw
 ```
 For assign device user id to Basler cameras, each time we connect on of cameras and call this command:
 ```
+roscore
 rosrun pylon_camera set_device_usr_id [-sn SERIAL_NB] your_device_user_id
 ```
+in case that we do not have the serial number:
+```
+roscore
+rosrun pylon_camera set_device_usr_id your_device_user_id
+```
+To see changes, usb cable of the camera should be removed and pluged in.
