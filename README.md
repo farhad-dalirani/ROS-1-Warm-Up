@@ -467,3 +467,7 @@ How to set up to basler camera:
 ```
 https://github.com/basler/pylon-ros-camera/issues/60#issuecomment-740621677
 ```
+Basler camera's parameter are explained here:
+```
+https://github.com/basler/pylon-ros-camera/tree/master/pylon_camera
+```
