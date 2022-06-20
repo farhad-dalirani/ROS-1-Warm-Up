@@ -471,3 +471,8 @@ Basler camera's parameter are explained here:
 ```
 https://github.com/basler/pylon-ros-camera/tree/master/pylon_camera
 ```
+
+Information for usbfs, Pylon:
+```
+https://www.baslerweb.com/fp-1654588449/media/downloads/software/pylon_software/README~5.txt
+```
