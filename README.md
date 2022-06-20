@@ -472,7 +472,8 @@ Basler camera's parameter are explained here:
 https://github.com/basler/pylon-ros-camera/tree/master/pylon_camera
 ```
 
-Information for usbfs, Pylon:
+Information for usbfs, Pylon, without it, cameras do not work smooth and real-time:
 ```
 https://www.baslerweb.com/fp-1654588449/media/downloads/software/pylon_software/README~5.txt
 ```
+The most important part in this document is `USB Vision Cameras` topic and what comes next of it.
