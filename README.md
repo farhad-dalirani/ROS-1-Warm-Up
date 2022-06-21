@@ -438,7 +438,11 @@ Basler Website for Downloading Softwares:
 ```
 https://www.baslerweb.com/en/downloads/software-downloads
 ```
-It can be isntalled according to:
+Explanation of features:
+```
+https://docs.baslerweb.com/optimizing-image-quality.html#depth-of-focus
+```
+It can be installed according to:
 ```
 https://github.com/basler/pylon-ros-camera
 wiki.ros.org/action/fullsearch/pylon_camera
