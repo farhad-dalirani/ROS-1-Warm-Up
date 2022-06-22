@@ -491,4 +491,7 @@ It solves a lot of issues with frame rates:
 ```
 https://github.com/basler/pylon-ros-camera/issues/81
 ```
-
+To run with a user set, for example userset1:
+```
+roslaunch pylon_camera pylon_camera_node.launch startup_user_set:=UserSet1
+```
