@@ -487,3 +487,8 @@ https://www.baslerweb.com/fp-1654588449/media/downloads/software/pylon_software/
 The most important part in this document is `USB Vision Cameras` topic and what comes next of it.
 In the file, it is mentioned that we should run setup-usb.sh. It may face an error. We should change 'grub2-mkconfig' to 'grub-mkconfig'. 
 
+It solves a lot of issues with frame rates:
+```
+https://github.com/basler/pylon-ros-camera/issues/81
+```
+
