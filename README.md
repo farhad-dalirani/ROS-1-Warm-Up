@@ -505,3 +505,8 @@ The package web-site:
 ```
 http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration
 ```
+
+This do the job for our topic names:
+```
+rosrun camera_calibration cameracalibrator.py --approximate 0.1 --size 8x6 --square 0.10 right:=/ros_basler_right/pylon_camera_node/image_raw left:=/ros_basler_left/pylon_camera_node/image_raw right_camera:=/ros_basler_right/pylon_camera_node left_camera:=/ros_basler_left/pylon_camera_node
+```
