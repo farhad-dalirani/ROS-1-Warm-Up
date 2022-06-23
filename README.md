@@ -499,3 +499,9 @@ In case of problem with basler:
 ```
 https://stackoverflow.com/questions/72671393/problem-with-basler-camera-low-frame-rate-and-latency-ros
 ```
+
+# Camera Calibration
+The package web-site:
+```
+http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration
+```
