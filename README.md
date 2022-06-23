@@ -495,3 +495,7 @@ To run with a user set, for example userset1:
 ```
 roslaunch pylon_camera pylon_camera_node.launch startup_user_set:=UserSet1
 ```
+In case of problem with basler:
+```
+https://stackoverflow.com/questions/72671393/problem-with-basler-camera-low-frame-rate-and-latency-ros
+```
