@@ -500,7 +500,7 @@ In case of problem with basler:
 https://stackoverflow.com/questions/72671393/problem-with-basler-camera-low-frame-rate-and-latency-ros
 ```
 
-# Camera Calibration
+# Stereo Camera Calibration
 The package web-site:
 ```
 http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration
@@ -509,4 +509,10 @@ http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration
 This do the job for our topic names:
 ```
 rosrun camera_calibration cameracalibrator.py --approximate 0.1 --size 8x6 --square 0.10 right:=/ros_basler_right/pylon_camera_node/image_raw left:=/ros_basler_left/pylon_camera_node/image_raw right_camera:=/ros_basler_right/pylon_camera_node left_camera:=/ros_basler_left/pylon_camera_node
+```
+
+# Stereo and LiDAR Calibration:
+The ROS package:
+```
+http://wiki.ros.org/velo2cam_calibration
 ```
