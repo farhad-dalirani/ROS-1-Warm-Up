@@ -434,6 +434,12 @@ At the `Displays` section of RVIZ's GUI, there is an `Add` button. After clickin
 The second one is easier.
 
 ## ROS Basler Pylon ROS Camera
+
+Use Basler cameras as stereo system.
+```
+https://github.com/farhad-dalirani/ROS_Basler_Camera_Stereo_High_Frame_Rate
+```
+
 Basler Website for Downloading Softwares including `pylon viewer`:
 ```
 https://www.baslerweb.com/en/downloads/software-downloads
